@@ -1,0 +1,331 @@
+Simulator report for gen_ena
+Mon Feb 29 14:53:00 2016
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 71 nodes     ;
+; Simulation Coverage         ;      27.08 % ;
+; Total Number of Transitions ; 411          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C20F484C7 ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Timing        ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      27.08 % ;
+; Total nodes checked                                 ; 71           ;
+; Total output ports checked                          ; 96           ;
+; Total output ports with complete 1/0-value coverage ; 26           ;
+; Total output ports with no 1/0-value coverage       ; 70           ;
+; Total output ports with no 1-value coverage         ; 70           ;
+; Total output ports with no 0-value coverage         ; 70           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |gen_ena|Add0~0       ; |gen_ena|Add0~0       ; combout          ;
+; |gen_ena|Add0~0       ; |gen_ena|Add0~1       ; cout             ;
+; |gen_ena|Add0~2       ; |gen_ena|Add0~2       ; combout          ;
+; |gen_ena|Add0~2       ; |gen_ena|Add0~3       ; cout             ;
+; |gen_ena|Add0~4       ; |gen_ena|Add0~4       ; combout          ;
+; |gen_ena|Add0~4       ; |gen_ena|Add0~5       ; cout             ;
+; |gen_ena|Add0~6       ; |gen_ena|Add0~6       ; combout          ;
+; |gen_ena|Add0~6       ; |gen_ena|Add0~7       ; cout             ;
+; |gen_ena|Add0~8       ; |gen_ena|Add0~8       ; combout          ;
+; |gen_ena|T            ; |gen_ena|T            ; regout           ;
+; |gen_ena|clk_ena~reg0 ; |gen_ena|clk_ena~reg0 ; regout           ;
+; |gen_ena|cmpt[1]      ; |gen_ena|cmpt[1]      ; regout           ;
+; |gen_ena|cmpt[3]      ; |gen_ena|cmpt[3]      ; regout           ;
+; |gen_ena|cmpt[0]      ; |gen_ena|cmpt[0]      ; regout           ;
+; |gen_ena|cmpt[2]      ; |gen_ena|cmpt[2]      ; regout           ;
+; |gen_ena|Equal0~0     ; |gen_ena|Equal0~0     ; combout          ;
+; |gen_ena|Equal0~4     ; |gen_ena|Equal0~4     ; combout          ;
+; |gen_ena|T~0          ; |gen_ena|T~0          ; combout          ;
+; |gen_ena|Equal0~8     ; |gen_ena|Equal0~8     ; combout          ;
+; |gen_ena|cmpt~0       ; |gen_ena|cmpt~0       ; combout          ;
+; |gen_ena|cmpt~1       ; |gen_ena|cmpt~1       ; combout          ;
+; |gen_ena|cmpt~2       ; |gen_ena|cmpt~2       ; combout          ;
+; |gen_ena|sortie_test  ; |gen_ena|sortie_test  ; padio            ;
+; |gen_ena|clk_ena      ; |gen_ena|clk_ena      ; padio            ;
+; |gen_ena|clk          ; |gen_ena|clk~corein   ; combout          ;
+; |gen_ena|clk~clkctrl  ; |gen_ena|clk~clkctrl  ; outclk           ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------+
+; Missing 1-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |gen_ena|Add0~8   ; |gen_ena|Add0~9   ; cout             ;
+; |gen_ena|Add0~10  ; |gen_ena|Add0~10  ; combout          ;
+; |gen_ena|Add0~10  ; |gen_ena|Add0~11  ; cout             ;
+; |gen_ena|Add0~12  ; |gen_ena|Add0~12  ; combout          ;
+; |gen_ena|Add0~12  ; |gen_ena|Add0~13  ; cout             ;
+; |gen_ena|Add0~14  ; |gen_ena|Add0~14  ; combout          ;
+; |gen_ena|Add0~14  ; |gen_ena|Add0~15  ; cout             ;
+; |gen_ena|Add0~16  ; |gen_ena|Add0~16  ; combout          ;
+; |gen_ena|Add0~16  ; |gen_ena|Add0~17  ; cout             ;
+; |gen_ena|Add0~18  ; |gen_ena|Add0~18  ; combout          ;
+; |gen_ena|Add0~18  ; |gen_ena|Add0~19  ; cout             ;
+; |gen_ena|Add0~20  ; |gen_ena|Add0~20  ; combout          ;
+; |gen_ena|Add0~20  ; |gen_ena|Add0~21  ; cout             ;
+; |gen_ena|Add0~22  ; |gen_ena|Add0~22  ; combout          ;
+; |gen_ena|Add0~22  ; |gen_ena|Add0~23  ; cout             ;
+; |gen_ena|Add0~24  ; |gen_ena|Add0~24  ; combout          ;
+; |gen_ena|Add0~24  ; |gen_ena|Add0~25  ; cout             ;
+; |gen_ena|Add0~26  ; |gen_ena|Add0~26  ; combout          ;
+; |gen_ena|Add0~26  ; |gen_ena|Add0~27  ; cout             ;
+; |gen_ena|Add0~28  ; |gen_ena|Add0~28  ; combout          ;
+; |gen_ena|Add0~28  ; |gen_ena|Add0~29  ; cout             ;
+; |gen_ena|Add0~30  ; |gen_ena|Add0~30  ; combout          ;
+; |gen_ena|Add0~30  ; |gen_ena|Add0~31  ; cout             ;
+; |gen_ena|Add0~32  ; |gen_ena|Add0~32  ; combout          ;
+; |gen_ena|Add0~32  ; |gen_ena|Add0~33  ; cout             ;
+; |gen_ena|Add0~34  ; |gen_ena|Add0~34  ; combout          ;
+; |gen_ena|Add0~34  ; |gen_ena|Add0~35  ; cout             ;
+; |gen_ena|Add0~36  ; |gen_ena|Add0~36  ; combout          ;
+; |gen_ena|Add0~36  ; |gen_ena|Add0~37  ; cout             ;
+; |gen_ena|Add0~38  ; |gen_ena|Add0~38  ; combout          ;
+; |gen_ena|Add0~38  ; |gen_ena|Add0~39  ; cout             ;
+; |gen_ena|Add0~40  ; |gen_ena|Add0~40  ; combout          ;
+; |gen_ena|Add0~40  ; |gen_ena|Add0~41  ; cout             ;
+; |gen_ena|Add0~42  ; |gen_ena|Add0~42  ; combout          ;
+; |gen_ena|Add0~42  ; |gen_ena|Add0~43  ; cout             ;
+; |gen_ena|Add0~44  ; |gen_ena|Add0~44  ; combout          ;
+; |gen_ena|Add0~44  ; |gen_ena|Add0~45  ; cout             ;
+; |gen_ena|Add0~46  ; |gen_ena|Add0~46  ; combout          ;
+; |gen_ena|Add0~46  ; |gen_ena|Add0~47  ; cout             ;
+; |gen_ena|Add0~48  ; |gen_ena|Add0~48  ; combout          ;
+; |gen_ena|Add0~48  ; |gen_ena|Add0~49  ; cout             ;
+; |gen_ena|Add0~50  ; |gen_ena|Add0~50  ; combout          ;
+; |gen_ena|cmpt[4]  ; |gen_ena|cmpt[4]  ; regout           ;
+; |gen_ena|cmpt[5]  ; |gen_ena|cmpt[5]  ; regout           ;
+; |gen_ena|cmpt[6]  ; |gen_ena|cmpt[6]  ; regout           ;
+; |gen_ena|cmpt[7]  ; |gen_ena|cmpt[7]  ; regout           ;
+; |gen_ena|Equal0~1 ; |gen_ena|Equal0~1 ; combout          ;
+; |gen_ena|cmpt[8]  ; |gen_ena|cmpt[8]  ; regout           ;
+; |gen_ena|cmpt[9]  ; |gen_ena|cmpt[9]  ; regout           ;
+; |gen_ena|cmpt[10] ; |gen_ena|cmpt[10] ; regout           ;
+; |gen_ena|cmpt[11] ; |gen_ena|cmpt[11] ; regout           ;
+; |gen_ena|Equal0~2 ; |gen_ena|Equal0~2 ; combout          ;
+; |gen_ena|cmpt[12] ; |gen_ena|cmpt[12] ; regout           ;
+; |gen_ena|cmpt[13] ; |gen_ena|cmpt[13] ; regout           ;
+; |gen_ena|cmpt[14] ; |gen_ena|cmpt[14] ; regout           ;
+; |gen_ena|cmpt[15] ; |gen_ena|cmpt[15] ; regout           ;
+; |gen_ena|Equal0~3 ; |gen_ena|Equal0~3 ; combout          ;
+; |gen_ena|cmpt[16] ; |gen_ena|cmpt[16] ; regout           ;
+; |gen_ena|cmpt[17] ; |gen_ena|cmpt[17] ; regout           ;
+; |gen_ena|cmpt[18] ; |gen_ena|cmpt[18] ; regout           ;
+; |gen_ena|cmpt[19] ; |gen_ena|cmpt[19] ; regout           ;
+; |gen_ena|Equal0~5 ; |gen_ena|Equal0~5 ; combout          ;
+; |gen_ena|cmpt[20] ; |gen_ena|cmpt[20] ; regout           ;
+; |gen_ena|cmpt[21] ; |gen_ena|cmpt[21] ; regout           ;
+; |gen_ena|cmpt[22] ; |gen_ena|cmpt[22] ; regout           ;
+; |gen_ena|cmpt[23] ; |gen_ena|cmpt[23] ; regout           ;
+; |gen_ena|Equal0~6 ; |gen_ena|Equal0~6 ; combout          ;
+; |gen_ena|cmpt[24] ; |gen_ena|cmpt[24] ; regout           ;
+; |gen_ena|cmpt[25] ; |gen_ena|cmpt[25] ; regout           ;
+; |gen_ena|Equal0~7 ; |gen_ena|Equal0~7 ; combout          ;
++-------------------+-------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------+
+; Missing 0-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |gen_ena|Add0~8   ; |gen_ena|Add0~9   ; cout             ;
+; |gen_ena|Add0~10  ; |gen_ena|Add0~10  ; combout          ;
+; |gen_ena|Add0~10  ; |gen_ena|Add0~11  ; cout             ;
+; |gen_ena|Add0~12  ; |gen_ena|Add0~12  ; combout          ;
+; |gen_ena|Add0~12  ; |gen_ena|Add0~13  ; cout             ;
+; |gen_ena|Add0~14  ; |gen_ena|Add0~14  ; combout          ;
+; |gen_ena|Add0~14  ; |gen_ena|Add0~15  ; cout             ;
+; |gen_ena|Add0~16  ; |gen_ena|Add0~16  ; combout          ;
+; |gen_ena|Add0~16  ; |gen_ena|Add0~17  ; cout             ;
+; |gen_ena|Add0~18  ; |gen_ena|Add0~18  ; combout          ;
+; |gen_ena|Add0~18  ; |gen_ena|Add0~19  ; cout             ;
+; |gen_ena|Add0~20  ; |gen_ena|Add0~20  ; combout          ;
+; |gen_ena|Add0~20  ; |gen_ena|Add0~21  ; cout             ;
+; |gen_ena|Add0~22  ; |gen_ena|Add0~22  ; combout          ;
+; |gen_ena|Add0~22  ; |gen_ena|Add0~23  ; cout             ;
+; |gen_ena|Add0~24  ; |gen_ena|Add0~24  ; combout          ;
+; |gen_ena|Add0~24  ; |gen_ena|Add0~25  ; cout             ;
+; |gen_ena|Add0~26  ; |gen_ena|Add0~26  ; combout          ;
+; |gen_ena|Add0~26  ; |gen_ena|Add0~27  ; cout             ;
+; |gen_ena|Add0~28  ; |gen_ena|Add0~28  ; combout          ;
+; |gen_ena|Add0~28  ; |gen_ena|Add0~29  ; cout             ;
+; |gen_ena|Add0~30  ; |gen_ena|Add0~30  ; combout          ;
+; |gen_ena|Add0~30  ; |gen_ena|Add0~31  ; cout             ;
+; |gen_ena|Add0~32  ; |gen_ena|Add0~32  ; combout          ;
+; |gen_ena|Add0~32  ; |gen_ena|Add0~33  ; cout             ;
+; |gen_ena|Add0~34  ; |gen_ena|Add0~34  ; combout          ;
+; |gen_ena|Add0~34  ; |gen_ena|Add0~35  ; cout             ;
+; |gen_ena|Add0~36  ; |gen_ena|Add0~36  ; combout          ;
+; |gen_ena|Add0~36  ; |gen_ena|Add0~37  ; cout             ;
+; |gen_ena|Add0~38  ; |gen_ena|Add0~38  ; combout          ;
+; |gen_ena|Add0~38  ; |gen_ena|Add0~39  ; cout             ;
+; |gen_ena|Add0~40  ; |gen_ena|Add0~40  ; combout          ;
+; |gen_ena|Add0~40  ; |gen_ena|Add0~41  ; cout             ;
+; |gen_ena|Add0~42  ; |gen_ena|Add0~42  ; combout          ;
+; |gen_ena|Add0~42  ; |gen_ena|Add0~43  ; cout             ;
+; |gen_ena|Add0~44  ; |gen_ena|Add0~44  ; combout          ;
+; |gen_ena|Add0~44  ; |gen_ena|Add0~45  ; cout             ;
+; |gen_ena|Add0~46  ; |gen_ena|Add0~46  ; combout          ;
+; |gen_ena|Add0~46  ; |gen_ena|Add0~47  ; cout             ;
+; |gen_ena|Add0~48  ; |gen_ena|Add0~48  ; combout          ;
+; |gen_ena|Add0~48  ; |gen_ena|Add0~49  ; cout             ;
+; |gen_ena|Add0~50  ; |gen_ena|Add0~50  ; combout          ;
+; |gen_ena|cmpt[4]  ; |gen_ena|cmpt[4]  ; regout           ;
+; |gen_ena|cmpt[5]  ; |gen_ena|cmpt[5]  ; regout           ;
+; |gen_ena|cmpt[6]  ; |gen_ena|cmpt[6]  ; regout           ;
+; |gen_ena|cmpt[7]  ; |gen_ena|cmpt[7]  ; regout           ;
+; |gen_ena|Equal0~1 ; |gen_ena|Equal0~1 ; combout          ;
+; |gen_ena|cmpt[8]  ; |gen_ena|cmpt[8]  ; regout           ;
+; |gen_ena|cmpt[9]  ; |gen_ena|cmpt[9]  ; regout           ;
+; |gen_ena|cmpt[10] ; |gen_ena|cmpt[10] ; regout           ;
+; |gen_ena|cmpt[11] ; |gen_ena|cmpt[11] ; regout           ;
+; |gen_ena|Equal0~2 ; |gen_ena|Equal0~2 ; combout          ;
+; |gen_ena|cmpt[12] ; |gen_ena|cmpt[12] ; regout           ;
+; |gen_ena|cmpt[13] ; |gen_ena|cmpt[13] ; regout           ;
+; |gen_ena|cmpt[14] ; |gen_ena|cmpt[14] ; regout           ;
+; |gen_ena|cmpt[15] ; |gen_ena|cmpt[15] ; regout           ;
+; |gen_ena|Equal0~3 ; |gen_ena|Equal0~3 ; combout          ;
+; |gen_ena|cmpt[16] ; |gen_ena|cmpt[16] ; regout           ;
+; |gen_ena|cmpt[17] ; |gen_ena|cmpt[17] ; regout           ;
+; |gen_ena|cmpt[18] ; |gen_ena|cmpt[18] ; regout           ;
+; |gen_ena|cmpt[19] ; |gen_ena|cmpt[19] ; regout           ;
+; |gen_ena|Equal0~5 ; |gen_ena|Equal0~5 ; combout          ;
+; |gen_ena|cmpt[20] ; |gen_ena|cmpt[20] ; regout           ;
+; |gen_ena|cmpt[21] ; |gen_ena|cmpt[21] ; regout           ;
+; |gen_ena|cmpt[22] ; |gen_ena|cmpt[22] ; regout           ;
+; |gen_ena|cmpt[23] ; |gen_ena|cmpt[23] ; regout           ;
+; |gen_ena|Equal0~6 ; |gen_ena|Equal0~6 ; combout          ;
+; |gen_ena|cmpt[24] ; |gen_ena|cmpt[24] ; regout           ;
+; |gen_ena|cmpt[25] ; |gen_ena|cmpt[25] ; regout           ;
+; |gen_ena|Equal0~7 ; |gen_ena|Equal0~7 ; combout          ;
++-------------------+-------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Mon Feb 29 14:52:59 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off gen_ena -c gen_ena
+Info: Using vector source file "U:/Exercice7_VHDL/Waveform1.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Waveform1.vwf called gen_ena.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      27.08 %
+Info: Number of transitions in simulation is 411
+Info: Vector file Waveform1.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 159 megabytes
+    Info: Processing ended: Mon Feb 29 14:53:01 2016
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:00
+
+

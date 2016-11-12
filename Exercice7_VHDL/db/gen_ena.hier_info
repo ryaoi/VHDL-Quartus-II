@@ -1,0 +1,33 @@
+|gen_ena
+clk => cmpt[0].CLK
+clk => cmpt[1].CLK
+clk => cmpt[2].CLK
+clk => cmpt[3].CLK
+clk => cmpt[4].CLK
+clk => cmpt[5].CLK
+clk => cmpt[6].CLK
+clk => cmpt[7].CLK
+clk => cmpt[8].CLK
+clk => cmpt[9].CLK
+clk => cmpt[10].CLK
+clk => cmpt[11].CLK
+clk => cmpt[12].CLK
+clk => cmpt[13].CLK
+clk => cmpt[14].CLK
+clk => cmpt[15].CLK
+clk => cmpt[16].CLK
+clk => cmpt[17].CLK
+clk => cmpt[18].CLK
+clk => cmpt[19].CLK
+clk => cmpt[20].CLK
+clk => cmpt[21].CLK
+clk => cmpt[22].CLK
+clk => cmpt[23].CLK
+clk => cmpt[24].CLK
+clk => cmpt[25].CLK
+clk => T.CLK
+clk => clk_ena~reg0.CLK
+sortie_test <= T.DB_MAX_OUTPUT_PORT_TYPE
+clk_ena <= clk_ena~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

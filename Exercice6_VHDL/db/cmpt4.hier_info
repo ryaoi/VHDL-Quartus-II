@@ -1,0 +1,15 @@
+|cmpt4
+clk => d_int[0].CLK
+clk => d_int[1].CLK
+clk => d_int[2].CLK
+clk => d_int[3].CLK
+ena => d_int[3].ENA
+ena => d_int[2].ENA
+ena => d_int[1].ENA
+ena => d_int[0].ENA
+d[0] <= d_int[0].DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= d_int[1].DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= d_int[2].DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= d_int[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

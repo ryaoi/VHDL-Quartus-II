@@ -1,0 +1,398 @@
+Simulator report for cmpt_09_aff
+Mon Mar 07 15:26:20 2016
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 102 nodes    ;
+; Simulation Coverage         ;      13.49 % ;
+; Total Number of Transitions ; 376          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C20F484C7 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      13.49 % ;
+; Total nodes checked                                 ; 102          ;
+; Total output ports checked                          ; 126          ;
+; Total output ports with complete 1/0-value coverage ; 17           ;
+; Total output ports with no 1/0-value coverage       ; 108          ;
+; Total output ports with no 1-value coverage         ; 108          ;
+; Total output ports with no 0-value coverage         ; 109          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                            ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |cmpt_09_aff|gen_ena:u1|Add0~0   ; |cmpt_09_aff|gen_ena:u1|Add0~0   ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~0   ; |cmpt_09_aff|gen_ena:u1|Add0~1   ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~2   ; |cmpt_09_aff|gen_ena:u1|Add0~2   ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~2   ; |cmpt_09_aff|gen_ena:u1|Add0~3   ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~4   ; |cmpt_09_aff|gen_ena:u1|Add0~4   ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~4   ; |cmpt_09_aff|gen_ena:u1|Add0~5   ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~6   ; |cmpt_09_aff|gen_ena:u1|Add0~6   ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~6   ; |cmpt_09_aff|gen_ena:u1|Add0~7   ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~8   ; |cmpt_09_aff|gen_ena:u1|Add0~8   ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[3]  ; |cmpt_09_aff|gen_ena:u1|cmpt[3]  ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[2]  ; |cmpt_09_aff|gen_ena:u1|cmpt[2]  ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[1]  ; |cmpt_09_aff|gen_ena:u1|cmpt[1]  ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[0]  ; |cmpt_09_aff|gen_ena:u1|cmpt[0]  ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~2 ; |cmpt_09_aff|gen_ena:u1|Equal0~2 ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~1   ; |cmpt_09_aff|gen_ena:u1|cmpt~1   ; combout          ;
+; |cmpt_09_aff|clk                 ; |cmpt_09_aff|clk~corein          ; combout          ;
+; |cmpt_09_aff|clk~clkctrl         ; |cmpt_09_aff|clk~clkctrl         ; outclk           ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |cmpt_09_aff|gen_ena:u1|Add0~8      ; |cmpt_09_aff|gen_ena:u1|Add0~9      ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~10     ; |cmpt_09_aff|gen_ena:u1|Add0~10     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~10     ; |cmpt_09_aff|gen_ena:u1|Add0~11     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~12     ; |cmpt_09_aff|gen_ena:u1|Add0~12     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~12     ; |cmpt_09_aff|gen_ena:u1|Add0~13     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~14     ; |cmpt_09_aff|gen_ena:u1|Add0~14     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~14     ; |cmpt_09_aff|gen_ena:u1|Add0~15     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~16     ; |cmpt_09_aff|gen_ena:u1|Add0~16     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~16     ; |cmpt_09_aff|gen_ena:u1|Add0~17     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~18     ; |cmpt_09_aff|gen_ena:u1|Add0~18     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~18     ; |cmpt_09_aff|gen_ena:u1|Add0~19     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~20     ; |cmpt_09_aff|gen_ena:u1|Add0~20     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~20     ; |cmpt_09_aff|gen_ena:u1|Add0~21     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~22     ; |cmpt_09_aff|gen_ena:u1|Add0~22     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~22     ; |cmpt_09_aff|gen_ena:u1|Add0~23     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~24     ; |cmpt_09_aff|gen_ena:u1|Add0~24     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~24     ; |cmpt_09_aff|gen_ena:u1|Add0~25     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~26     ; |cmpt_09_aff|gen_ena:u1|Add0~26     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~26     ; |cmpt_09_aff|gen_ena:u1|Add0~27     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~28     ; |cmpt_09_aff|gen_ena:u1|Add0~28     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~28     ; |cmpt_09_aff|gen_ena:u1|Add0~29     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~30     ; |cmpt_09_aff|gen_ena:u1|Add0~30     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~30     ; |cmpt_09_aff|gen_ena:u1|Add0~31     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~32     ; |cmpt_09_aff|gen_ena:u1|Add0~32     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~32     ; |cmpt_09_aff|gen_ena:u1|Add0~33     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~34     ; |cmpt_09_aff|gen_ena:u1|Add0~34     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~34     ; |cmpt_09_aff|gen_ena:u1|Add0~35     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~36     ; |cmpt_09_aff|gen_ena:u1|Add0~36     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~36     ; |cmpt_09_aff|gen_ena:u1|Add0~37     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~38     ; |cmpt_09_aff|gen_ena:u1|Add0~38     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~38     ; |cmpt_09_aff|gen_ena:u1|Add0~39     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~40     ; |cmpt_09_aff|gen_ena:u1|Add0~40     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~40     ; |cmpt_09_aff|gen_ena:u1|Add0~41     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~42     ; |cmpt_09_aff|gen_ena:u1|Add0~42     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~42     ; |cmpt_09_aff|gen_ena:u1|Add0~43     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~44     ; |cmpt_09_aff|gen_ena:u1|Add0~44     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~44     ; |cmpt_09_aff|gen_ena:u1|Add0~45     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~46     ; |cmpt_09_aff|gen_ena:u1|Add0~46     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~46     ; |cmpt_09_aff|gen_ena:u1|Add0~47     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~48     ; |cmpt_09_aff|gen_ena:u1|Add0~48     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~48     ; |cmpt_09_aff|gen_ena:u1|Add0~49     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~50     ; |cmpt_09_aff|gen_ena:u1|Add0~50     ; combout          ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[0]   ; |cmpt_09_aff|cmpt_bcd:u2|d_int[0]   ; regout           ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[1]   ; |cmpt_09_aff|cmpt_bcd:u2|d_int[1]   ; regout           ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[2]   ; |cmpt_09_aff|cmpt_bcd:u2|d_int[2]   ; regout           ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[3]   ; |cmpt_09_aff|cmpt_bcd:u2|d_int[3]   ; regout           ;
+; |cmpt_09_aff|bin2seven:u3|Mux0~0    ; |cmpt_09_aff|bin2seven:u3|Mux0~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux1~0    ; |cmpt_09_aff|bin2seven:u3|Mux1~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux2~0    ; |cmpt_09_aff|bin2seven:u3|Mux2~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux3~0    ; |cmpt_09_aff|bin2seven:u3|Mux3~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux4~0    ; |cmpt_09_aff|bin2seven:u3|Mux4~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux5~0    ; |cmpt_09_aff|bin2seven:u3|Mux5~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux6~0    ; |cmpt_09_aff|bin2seven:u3|Mux6~0    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|clk_ena     ; |cmpt_09_aff|gen_ena:u1|clk_ena     ; regout           ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int~0    ; |cmpt_09_aff|cmpt_bcd:u2|d_int~0    ; combout          ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[2]~1 ; |cmpt_09_aff|cmpt_bcd:u2|d_int[2]~1 ; combout          ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int~2    ; |cmpt_09_aff|cmpt_bcd:u2|d_int~2    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[11]    ; |cmpt_09_aff|gen_ena:u1|cmpt[11]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[10]    ; |cmpt_09_aff|gen_ena:u1|cmpt[10]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[9]     ; |cmpt_09_aff|gen_ena:u1|cmpt[9]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[8]     ; |cmpt_09_aff|gen_ena:u1|cmpt[8]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~0    ; |cmpt_09_aff|gen_ena:u1|Equal0~0    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[7]     ; |cmpt_09_aff|gen_ena:u1|cmpt[7]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[6]     ; |cmpt_09_aff|gen_ena:u1|cmpt[6]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[5]     ; |cmpt_09_aff|gen_ena:u1|cmpt[5]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~1    ; |cmpt_09_aff|gen_ena:u1|Equal0~1    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[12]    ; |cmpt_09_aff|gen_ena:u1|cmpt[12]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[13]    ; |cmpt_09_aff|gen_ena:u1|cmpt[13]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[14]    ; |cmpt_09_aff|gen_ena:u1|cmpt[14]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[15]    ; |cmpt_09_aff|gen_ena:u1|cmpt[15]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~3    ; |cmpt_09_aff|gen_ena:u1|Equal0~3    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~4    ; |cmpt_09_aff|gen_ena:u1|Equal0~4    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[17]    ; |cmpt_09_aff|gen_ena:u1|cmpt[17]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[19]    ; |cmpt_09_aff|gen_ena:u1|cmpt[19]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[16]    ; |cmpt_09_aff|gen_ena:u1|cmpt[16]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[18]    ; |cmpt_09_aff|gen_ena:u1|cmpt[18]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~5    ; |cmpt_09_aff|gen_ena:u1|Equal0~5    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[20]    ; |cmpt_09_aff|gen_ena:u1|cmpt[20]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[21]    ; |cmpt_09_aff|gen_ena:u1|cmpt[21]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[22]    ; |cmpt_09_aff|gen_ena:u1|cmpt[22]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[23]    ; |cmpt_09_aff|gen_ena:u1|cmpt[23]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~6    ; |cmpt_09_aff|gen_ena:u1|Equal0~6    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[25]    ; |cmpt_09_aff|gen_ena:u1|cmpt[25]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[24]    ; |cmpt_09_aff|gen_ena:u1|cmpt[24]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~7    ; |cmpt_09_aff|gen_ena:u1|Equal0~7    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~8    ; |cmpt_09_aff|gen_ena:u1|Equal0~8    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~0      ; |cmpt_09_aff|gen_ena:u1|cmpt~0      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~2      ; |cmpt_09_aff|gen_ena:u1|cmpt~2      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~3      ; |cmpt_09_aff|gen_ena:u1|cmpt~3      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~4      ; |cmpt_09_aff|gen_ena:u1|cmpt~4      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~5      ; |cmpt_09_aff|gen_ena:u1|cmpt~5      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~6      ; |cmpt_09_aff|gen_ena:u1|cmpt~6      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~7      ; |cmpt_09_aff|gen_ena:u1|cmpt~7      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~8      ; |cmpt_09_aff|gen_ena:u1|cmpt~8      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~9      ; |cmpt_09_aff|gen_ena:u1|cmpt~9      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~10     ; |cmpt_09_aff|gen_ena:u1|cmpt~10     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~11     ; |cmpt_09_aff|gen_ena:u1|cmpt~11     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~12     ; |cmpt_09_aff|gen_ena:u1|cmpt~12     ; combout          ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[0]~3 ; |cmpt_09_aff|cmpt_bcd:u2|d_int[0]~3 ; combout          ;
+; |cmpt_09_aff|a                      ; |cmpt_09_aff|a                      ; padio            ;
+; |cmpt_09_aff|b                      ; |cmpt_09_aff|b                      ; padio            ;
+; |cmpt_09_aff|c                      ; |cmpt_09_aff|c                      ; padio            ;
+; |cmpt_09_aff|d                      ; |cmpt_09_aff|d                      ; padio            ;
+; |cmpt_09_aff|e                      ; |cmpt_09_aff|e                      ; padio            ;
+; |cmpt_09_aff|f                      ; |cmpt_09_aff|f                      ; padio            ;
+; |cmpt_09_aff|g                      ; |cmpt_09_aff|g                      ; padio            ;
+; |cmpt_09_aff|n_reset                ; |cmpt_09_aff|n_reset~corein         ; combout          ;
+; |cmpt_09_aff|n_reset~clkctrl        ; |cmpt_09_aff|n_reset~clkctrl        ; outclk           ;
++-------------------------------------+-------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |cmpt_09_aff|gen_ena:u1|Add0~8      ; |cmpt_09_aff|gen_ena:u1|Add0~9      ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~10     ; |cmpt_09_aff|gen_ena:u1|Add0~10     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~10     ; |cmpt_09_aff|gen_ena:u1|Add0~11     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~12     ; |cmpt_09_aff|gen_ena:u1|Add0~12     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~12     ; |cmpt_09_aff|gen_ena:u1|Add0~13     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~14     ; |cmpt_09_aff|gen_ena:u1|Add0~14     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~14     ; |cmpt_09_aff|gen_ena:u1|Add0~15     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~16     ; |cmpt_09_aff|gen_ena:u1|Add0~16     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~16     ; |cmpt_09_aff|gen_ena:u1|Add0~17     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~18     ; |cmpt_09_aff|gen_ena:u1|Add0~18     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~18     ; |cmpt_09_aff|gen_ena:u1|Add0~19     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~20     ; |cmpt_09_aff|gen_ena:u1|Add0~20     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~20     ; |cmpt_09_aff|gen_ena:u1|Add0~21     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~22     ; |cmpt_09_aff|gen_ena:u1|Add0~22     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~22     ; |cmpt_09_aff|gen_ena:u1|Add0~23     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~24     ; |cmpt_09_aff|gen_ena:u1|Add0~24     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~24     ; |cmpt_09_aff|gen_ena:u1|Add0~25     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~26     ; |cmpt_09_aff|gen_ena:u1|Add0~26     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~26     ; |cmpt_09_aff|gen_ena:u1|Add0~27     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~28     ; |cmpt_09_aff|gen_ena:u1|Add0~28     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~28     ; |cmpt_09_aff|gen_ena:u1|Add0~29     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~30     ; |cmpt_09_aff|gen_ena:u1|Add0~30     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~30     ; |cmpt_09_aff|gen_ena:u1|Add0~31     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~32     ; |cmpt_09_aff|gen_ena:u1|Add0~32     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~32     ; |cmpt_09_aff|gen_ena:u1|Add0~33     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~34     ; |cmpt_09_aff|gen_ena:u1|Add0~34     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~34     ; |cmpt_09_aff|gen_ena:u1|Add0~35     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~36     ; |cmpt_09_aff|gen_ena:u1|Add0~36     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~36     ; |cmpt_09_aff|gen_ena:u1|Add0~37     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~38     ; |cmpt_09_aff|gen_ena:u1|Add0~38     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~38     ; |cmpt_09_aff|gen_ena:u1|Add0~39     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~40     ; |cmpt_09_aff|gen_ena:u1|Add0~40     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~40     ; |cmpt_09_aff|gen_ena:u1|Add0~41     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~42     ; |cmpt_09_aff|gen_ena:u1|Add0~42     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~42     ; |cmpt_09_aff|gen_ena:u1|Add0~43     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~44     ; |cmpt_09_aff|gen_ena:u1|Add0~44     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~44     ; |cmpt_09_aff|gen_ena:u1|Add0~45     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~46     ; |cmpt_09_aff|gen_ena:u1|Add0~46     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~46     ; |cmpt_09_aff|gen_ena:u1|Add0~47     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~48     ; |cmpt_09_aff|gen_ena:u1|Add0~48     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Add0~48     ; |cmpt_09_aff|gen_ena:u1|Add0~49     ; cout             ;
+; |cmpt_09_aff|gen_ena:u1|Add0~50     ; |cmpt_09_aff|gen_ena:u1|Add0~50     ; combout          ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[0]   ; |cmpt_09_aff|cmpt_bcd:u2|d_int[0]   ; regout           ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[1]   ; |cmpt_09_aff|cmpt_bcd:u2|d_int[1]   ; regout           ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[2]   ; |cmpt_09_aff|cmpt_bcd:u2|d_int[2]   ; regout           ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[3]   ; |cmpt_09_aff|cmpt_bcd:u2|d_int[3]   ; regout           ;
+; |cmpt_09_aff|bin2seven:u3|Mux0~0    ; |cmpt_09_aff|bin2seven:u3|Mux0~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux1~0    ; |cmpt_09_aff|bin2seven:u3|Mux1~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux2~0    ; |cmpt_09_aff|bin2seven:u3|Mux2~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux3~0    ; |cmpt_09_aff|bin2seven:u3|Mux3~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux4~0    ; |cmpt_09_aff|bin2seven:u3|Mux4~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux5~0    ; |cmpt_09_aff|bin2seven:u3|Mux5~0    ; combout          ;
+; |cmpt_09_aff|bin2seven:u3|Mux6~0    ; |cmpt_09_aff|bin2seven:u3|Mux6~0    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|clk_ena     ; |cmpt_09_aff|gen_ena:u1|clk_ena     ; regout           ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int~0    ; |cmpt_09_aff|cmpt_bcd:u2|d_int~0    ; combout          ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[2]~1 ; |cmpt_09_aff|cmpt_bcd:u2|d_int[2]~1 ; combout          ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int~2    ; |cmpt_09_aff|cmpt_bcd:u2|d_int~2    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[11]    ; |cmpt_09_aff|gen_ena:u1|cmpt[11]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[10]    ; |cmpt_09_aff|gen_ena:u1|cmpt[10]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[9]     ; |cmpt_09_aff|gen_ena:u1|cmpt[9]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[8]     ; |cmpt_09_aff|gen_ena:u1|cmpt[8]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~0    ; |cmpt_09_aff|gen_ena:u1|Equal0~0    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[7]     ; |cmpt_09_aff|gen_ena:u1|cmpt[7]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[6]     ; |cmpt_09_aff|gen_ena:u1|cmpt[6]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[5]     ; |cmpt_09_aff|gen_ena:u1|cmpt[5]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[4]     ; |cmpt_09_aff|gen_ena:u1|cmpt[4]     ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~1    ; |cmpt_09_aff|gen_ena:u1|Equal0~1    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[12]    ; |cmpt_09_aff|gen_ena:u1|cmpt[12]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[13]    ; |cmpt_09_aff|gen_ena:u1|cmpt[13]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[14]    ; |cmpt_09_aff|gen_ena:u1|cmpt[14]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[15]    ; |cmpt_09_aff|gen_ena:u1|cmpt[15]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~3    ; |cmpt_09_aff|gen_ena:u1|Equal0~3    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~4    ; |cmpt_09_aff|gen_ena:u1|Equal0~4    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[17]    ; |cmpt_09_aff|gen_ena:u1|cmpt[17]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[19]    ; |cmpt_09_aff|gen_ena:u1|cmpt[19]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[16]    ; |cmpt_09_aff|gen_ena:u1|cmpt[16]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[18]    ; |cmpt_09_aff|gen_ena:u1|cmpt[18]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~5    ; |cmpt_09_aff|gen_ena:u1|Equal0~5    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[20]    ; |cmpt_09_aff|gen_ena:u1|cmpt[20]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[21]    ; |cmpt_09_aff|gen_ena:u1|cmpt[21]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[22]    ; |cmpt_09_aff|gen_ena:u1|cmpt[22]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[23]    ; |cmpt_09_aff|gen_ena:u1|cmpt[23]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~6    ; |cmpt_09_aff|gen_ena:u1|Equal0~6    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[25]    ; |cmpt_09_aff|gen_ena:u1|cmpt[25]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|cmpt[24]    ; |cmpt_09_aff|gen_ena:u1|cmpt[24]    ; regout           ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~7    ; |cmpt_09_aff|gen_ena:u1|Equal0~7    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|Equal0~8    ; |cmpt_09_aff|gen_ena:u1|Equal0~8    ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~0      ; |cmpt_09_aff|gen_ena:u1|cmpt~0      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~2      ; |cmpt_09_aff|gen_ena:u1|cmpt~2      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~3      ; |cmpt_09_aff|gen_ena:u1|cmpt~3      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~4      ; |cmpt_09_aff|gen_ena:u1|cmpt~4      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~5      ; |cmpt_09_aff|gen_ena:u1|cmpt~5      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~6      ; |cmpt_09_aff|gen_ena:u1|cmpt~6      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~7      ; |cmpt_09_aff|gen_ena:u1|cmpt~7      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~8      ; |cmpt_09_aff|gen_ena:u1|cmpt~8      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~9      ; |cmpt_09_aff|gen_ena:u1|cmpt~9      ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~10     ; |cmpt_09_aff|gen_ena:u1|cmpt~10     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~11     ; |cmpt_09_aff|gen_ena:u1|cmpt~11     ; combout          ;
+; |cmpt_09_aff|gen_ena:u1|cmpt~12     ; |cmpt_09_aff|gen_ena:u1|cmpt~12     ; combout          ;
+; |cmpt_09_aff|cmpt_bcd:u2|d_int[0]~3 ; |cmpt_09_aff|cmpt_bcd:u2|d_int[0]~3 ; combout          ;
+; |cmpt_09_aff|a                      ; |cmpt_09_aff|a                      ; padio            ;
+; |cmpt_09_aff|b                      ; |cmpt_09_aff|b                      ; padio            ;
+; |cmpt_09_aff|c                      ; |cmpt_09_aff|c                      ; padio            ;
+; |cmpt_09_aff|d                      ; |cmpt_09_aff|d                      ; padio            ;
+; |cmpt_09_aff|e                      ; |cmpt_09_aff|e                      ; padio            ;
+; |cmpt_09_aff|f                      ; |cmpt_09_aff|f                      ; padio            ;
+; |cmpt_09_aff|g                      ; |cmpt_09_aff|g                      ; padio            ;
+; |cmpt_09_aff|n_reset                ; |cmpt_09_aff|n_reset~corein         ; combout          ;
+; |cmpt_09_aff|n_reset~clkctrl        ; |cmpt_09_aff|n_reset~clkctrl        ; outclk           ;
++-------------------------------------+-------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Mon Mar 07 15:26:19 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off cmpt_09_aff -c cmpt_09_aff
+Info: Using vector source file "U:/Exercice10_VHDL/cmpt_09_aff.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of cmpt_09_aff.vwf called cmpt_09_aff.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      13.49 %
+Info: Number of transitions in simulation is 376
+Info: Vector file cmpt_09_aff.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 159 megabytes
+    Info: Processing ended: Mon Mar 07 15:26:20 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

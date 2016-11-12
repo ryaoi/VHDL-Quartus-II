@@ -1,0 +1,105 @@
+|cmpt_09_aff
+clk => gen_ena:u1.clk
+clk => cmpt_bcd:u2.clk
+n_reset => cmpt_bcd:u2.n_reset
+ena => ~NO_FANOUT~
+a <= bin2seven:u3.a
+b <= bin2seven:u3.b
+c <= bin2seven:u3.c
+d <= bin2seven:u3.d
+e <= bin2seven:u3.e
+f <= bin2seven:u3.f
+g <= bin2seven:u3.g
+
+
+|cmpt_09_aff|gen_ena:u1
+clk => cmpt[0].CLK
+clk => cmpt[1].CLK
+clk => cmpt[2].CLK
+clk => cmpt[3].CLK
+clk => cmpt[4].CLK
+clk => cmpt[5].CLK
+clk => cmpt[6].CLK
+clk => cmpt[7].CLK
+clk => cmpt[8].CLK
+clk => cmpt[9].CLK
+clk => cmpt[10].CLK
+clk => cmpt[11].CLK
+clk => cmpt[12].CLK
+clk => cmpt[13].CLK
+clk => cmpt[14].CLK
+clk => cmpt[15].CLK
+clk => cmpt[16].CLK
+clk => cmpt[17].CLK
+clk => cmpt[18].CLK
+clk => cmpt[19].CLK
+clk => cmpt[20].CLK
+clk => cmpt[21].CLK
+clk => cmpt[22].CLK
+clk => cmpt[23].CLK
+clk => cmpt[24].CLK
+clk => cmpt[25].CLK
+clk => T.CLK
+clk => clk_ena~reg0.CLK
+sortie_test <= T.DB_MAX_OUTPUT_PORT_TYPE
+clk_ena <= clk_ena~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cmpt_09_aff|cmpt_bcd:u2
+clk => d_int[0].CLK
+clk => d_int[1].CLK
+clk => d_int[2].CLK
+clk => d_int[3].CLK
+n_reset => d_int[0].ACLR
+n_reset => d_int[1].ACLR
+n_reset => d_int[2].ACLR
+n_reset => d_int[3].ACLR
+ena => d_int[0].ENA
+ena => d_int[3].ENA
+ena => d_int[2].ENA
+ena => d_int[1].ENA
+d[0] <= d_int[0].DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= d_int[1].DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= d_int[2].DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= d_int[3].DB_MAX_OUTPUT_PORT_TYPE
+retenue <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cmpt_09_aff|bin2seven:u3
+bin[0] => Mux0.IN19
+bin[0] => Mux1.IN19
+bin[0] => Mux2.IN19
+bin[0] => Mux3.IN19
+bin[0] => Mux4.IN19
+bin[0] => Mux5.IN19
+bin[0] => Mux6.IN19
+bin[1] => Mux0.IN18
+bin[1] => Mux1.IN18
+bin[1] => Mux2.IN18
+bin[1] => Mux3.IN18
+bin[1] => Mux4.IN18
+bin[1] => Mux5.IN18
+bin[1] => Mux6.IN18
+bin[2] => Mux0.IN17
+bin[2] => Mux1.IN17
+bin[2] => Mux2.IN17
+bin[2] => Mux3.IN17
+bin[2] => Mux4.IN17
+bin[2] => Mux5.IN17
+bin[2] => Mux6.IN17
+bin[3] => Mux0.IN16
+bin[3] => Mux1.IN16
+bin[3] => Mux2.IN16
+bin[3] => Mux3.IN16
+bin[3] => Mux4.IN16
+bin[3] => Mux5.IN16
+bin[3] => Mux6.IN16
+a <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+b <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+c <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+d <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+e <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+f <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+g <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+
+

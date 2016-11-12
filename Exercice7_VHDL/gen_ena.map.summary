@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Feb 29 14:57:52 2016
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : gen_ena
+Top-level Entity Name : gen_ena
+Family : Cyclone II
+Total logic elements : 49
+    Total combinational functions : 49
+    Dedicated logic registers : 28
+Total registers : 28
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

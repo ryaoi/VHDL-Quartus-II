@@ -1,0 +1,106 @@
+|code_aff
+req1[1] => code2bin:u1.req[1]
+req1[2] => code2bin:u1.req[2]
+req1[3] => code2bin:u1.req[3]
+bout[0] <= code2bin:u1.b[0]
+bout[1] <= code2bin:u1.b[1]
+a1 <= bin2seven_eco:u2.a
+b1 <= bin2seven_eco:u2.b
+c1 <= bin2seven_eco:u2.c
+d1 <= bin2seven_eco:u2.d
+e1 <= bin2seven_eco:u2.e
+f1 <= bin2seven_eco:u2.f
+g1 <= bin2seven_eco:u2.g
+
+
+|code_aff|code2bin:u1
+req[1] => b.DATAA
+req[2] => b.OUTPUTSELECT
+req[2] => b.DATAA
+req[3] => b.OUTPUTSELECT
+req[3] => b.OUTPUTSELECT
+b[0] <= b.DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|code_aff|bin2seven_eco:u2
+bin[0] => Equal0.IN3
+bin[0] => Equal1.IN0
+bin[0] => Equal2.IN3
+bin[0] => Equal3.IN1
+bin[0] => Equal4.IN3
+bin[0] => Equal5.IN1
+bin[0] => Equal6.IN3
+bin[0] => Equal7.IN2
+bin[0] => Equal8.IN3
+bin[0] => Equal9.IN1
+bin[0] => Equal10.IN3
+bin[0] => Equal11.IN2
+bin[0] => Equal12.IN3
+bin[0] => Equal13.IN2
+bin[0] => Equal14.IN3
+bin[0] => Equal15.IN3
+bin[1] => Equal0.IN2
+bin[1] => Equal1.IN3
+bin[1] => Equal2.IN0
+bin[1] => Equal3.IN0
+bin[1] => Equal4.IN2
+bin[1] => Equal5.IN3
+bin[1] => Equal6.IN1
+bin[1] => Equal7.IN1
+bin[1] => Equal8.IN2
+bin[1] => Equal9.IN3
+bin[1] => Equal10.IN1
+bin[1] => Equal11.IN1
+bin[1] => Equal12.IN2
+bin[1] => Equal13.IN3
+bin[1] => Equal14.IN2
+bin[1] => Equal15.IN2
+bin[2] => Equal0.IN1
+bin[2] => Equal1.IN2
+bin[2] => Equal2.IN2
+bin[2] => Equal3.IN3
+bin[2] => Equal4.IN0
+bin[2] => Equal5.IN0
+bin[2] => Equal6.IN0
+bin[2] => Equal7.IN0
+bin[2] => Equal8.IN1
+bin[2] => Equal9.IN2
+bin[2] => Equal10.IN2
+bin[2] => Equal11.IN3
+bin[2] => Equal12.IN1
+bin[2] => Equal13.IN1
+bin[2] => Equal14.IN1
+bin[2] => Equal15.IN1
+bin[3] => Equal0.IN0
+bin[3] => Equal1.IN1
+bin[3] => Equal2.IN1
+bin[3] => Equal3.IN2
+bin[3] => Equal4.IN1
+bin[3] => Equal5.IN2
+bin[3] => Equal6.IN2
+bin[3] => Equal7.IN3
+bin[3] => Equal8.IN0
+bin[3] => Equal9.IN0
+bin[3] => Equal10.IN0
+bin[3] => Equal11.IN0
+bin[3] => Equal12.IN0
+bin[3] => Equal13.IN0
+bin[3] => Equal14.IN0
+bin[3] => Equal15.IN0
+leds_on => out_int.OUTPUTSELECT
+leds_on => out_int.OUTPUTSELECT
+leds_on => out_int.OUTPUTSELECT
+leds_on => out_int.OUTPUTSELECT
+leds_on => out_int.OUTPUTSELECT
+leds_on => out_int.OUTPUTSELECT
+leds_on => out_int.OUTPUTSELECT
+a <= out_int.DB_MAX_OUTPUT_PORT_TYPE
+b <= out_int.DB_MAX_OUTPUT_PORT_TYPE
+c <= out_int.DB_MAX_OUTPUT_PORT_TYPE
+d <= out_int.DB_MAX_OUTPUT_PORT_TYPE
+e <= out_int.DB_MAX_OUTPUT_PORT_TYPE
+f <= out_int.DB_MAX_OUTPUT_PORT_TYPE
+g <= out_int.DB_MAX_OUTPUT_PORT_TYPE
+
+

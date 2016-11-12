@@ -1,0 +1,57 @@
+|cmpt4_50Mhz
+clk => gen_ena:u1.clk
+clk => cmpt4:u2.clk
+d[0] <= cmpt4:u2.d[0]
+d[1] <= cmpt4:u2.d[1]
+d[2] <= cmpt4:u2.d[2]
+d[3] <= cmpt4:u2.d[3]
+
+
+|cmpt4_50Mhz|gen_ena:u1
+clk => cmpt[0].CLK
+clk => cmpt[1].CLK
+clk => cmpt[2].CLK
+clk => cmpt[3].CLK
+clk => cmpt[4].CLK
+clk => cmpt[5].CLK
+clk => cmpt[6].CLK
+clk => cmpt[7].CLK
+clk => cmpt[8].CLK
+clk => cmpt[9].CLK
+clk => cmpt[10].CLK
+clk => cmpt[11].CLK
+clk => cmpt[12].CLK
+clk => cmpt[13].CLK
+clk => cmpt[14].CLK
+clk => cmpt[15].CLK
+clk => cmpt[16].CLK
+clk => cmpt[17].CLK
+clk => cmpt[18].CLK
+clk => cmpt[19].CLK
+clk => cmpt[20].CLK
+clk => cmpt[21].CLK
+clk => cmpt[22].CLK
+clk => cmpt[23].CLK
+clk => cmpt[24].CLK
+clk => cmpt[25].CLK
+clk => T.CLK
+clk => clk_ena~reg0.CLK
+sortie_test <= T.DB_MAX_OUTPUT_PORT_TYPE
+clk_ena <= clk_ena~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cmpt4_50Mhz|cmpt4:u2
+clk => d_int[0].CLK
+clk => d_int[1].CLK
+clk => d_int[2].CLK
+clk => d_int[3].CLK
+ena => d_int[3].ENA
+ena => d_int[2].ENA
+ena => d_int[1].ENA
+ena => d_int[0].ENA
+d[0] <= d_int[0].DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= d_int[1].DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= d_int[2].DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= d_int[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

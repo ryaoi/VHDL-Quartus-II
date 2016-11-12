@@ -1,0 +1,10 @@
+|code2bin
+req[1] => b.DATAA
+req[2] => b.OUTPUTSELECT
+req[2] => b.DATAA
+req[3] => b.OUTPUTSELECT
+req[3] => b.OUTPUTSELECT
+b[0] <= b.DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+
+
